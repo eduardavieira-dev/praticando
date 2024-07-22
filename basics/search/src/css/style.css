@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 135vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #f3dfea 0%, rgb(255, 246, 250) 100%);
+}
+
+#wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    margin-top: 30px;
+}
+
+.input-group{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 8px 16px 8px 8px;
+    border-radius: 24px;
+    gap: 8px;
+}
+
+.input-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    min-height: 32px;
+    background-color: rgb(255, 118, 163);
+    color: white;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.input-field{
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;  
+    gap: 12px;
+    list-style: none;
+    margin-top: 12px;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 14px;
+    width: 350px;
+    max-height: 800px;
+    overflow-y: auto ; 
+}
+
+.item{
+    display: flex;
+    gap: 12px;
+}
+
+.item-image{
+    width: 110px;
+    height: 160px;
+}
+
+.item-image img{
+    width: 110px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-title{
+    font-size: 18px;
+    color: #333;
+}
+.item-subtitle{
+    font-size: 12px;
+    color: rgb(159, 19, 50);
+}
+
+.item-description{
+    font-size: 14px;
+    color: rgb(80, 53, 59);
+}
+
+#no_results{
+    display: none;
+    text-align: center;
+    color: rgb(249, 131, 174);
+}
+
+
+
+
+footer{
+    margin-top: 10px;
+    width: 100%;
+    color: #f977a7;
+}
+
+.footer-link{
+    text-decoration: none;
+}
+
+#footer_content{
+    background-color:  #ffedf5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1{
+    margin-bottom: 0.75rem;
+    /* text-shadow: rgb(212, 107, 166) 5px 5px 30px; */
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #f5f5f5;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i{
+    font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover{
+    opacity: 0,8;
+}
+
+#instagram {
+    background-color: #ff63a9;
+}
+
+#facebook {
+    background-color: #ff63a9;
+}
+
+#whatsapp {
+    background-color: #ff63a9;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link{
+    color: #a8a29e;
+    transition: all 0.3s;
+}
+
+.footer-list .footer-link:hover{
+    color: #ff2992;
+}
+
+#footer_subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p{
+    color: #a8a29e;
+}
+
+#input_group{
+    display: flex;
+    align-items: center;
+    background-color:  #ffffff;
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button{
+    background-color: #ff73b2;
+    border: none;
+    color: #f5f5f5;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: #f7d0e2;
+    color: #0e0c0c;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 200;
+}
+
+@media screen and (max-width: 768px){
+    #footer_content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}

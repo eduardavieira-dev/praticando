@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Pesquisando com JS</title>
+</head>
+<body>
+    <div id="wrapper">
+        <main>
+            <div id="container">
+                <div class="input-group">
+                    <div class="input-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input id="search" 
+                        type="text" 
+                        class="input-field"
+                        placeholder="Pesquisar">
+                </div>
+                <ul class="items">
+                    <li class="item">
+                        <div class="item-image">
+                            <img src="./src/img/boneca.jpg" alt="bonequinha de luxo">
+                        </div>
+                        <div class="item-content">
+                                <h2 class="item-title">
+                                    Breakfast at Tiffany's
+                                </h2>
+                                <p class="item-subtitle">
+                                    <i class="fa-solid fa-film"></i>
+                                    Filme(1961)
+                                </p>
+                                <p class="item-description">
+                                    O filme mais famoso da estrela Audrey Hepburn. Ela canta Moon River e nos emocionamos com sua personagem. 
+                                </p>
+                            
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item-image">
+                            <img src="./src/img/sabrina.jpg" alt="sabrina">
+                        </div>
+                        <div class="item-content">
+                                <h2 class="item-title">
+                                    Sabrina
+                                </h2>
+                                <p class="item-subtitle">
+                                    <i class="fa-solid fa-film"></i>
+                                    Filme(1954)
+                                </p>
+                                <p class="item-description">
+                                    Um filme inesquecivel de Audrey Hepburn em que ela canta La vie en Rose e nos fascina com seu charme e carisma.
+                                </p>
+                            
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item-image">
+                            <img src="./src/img/funny.jpg" alt="cinderela em paris">
+                        </div>
+                        <div class="item-content">
+                            <h2 class="item-title">
+                                Cinderela em Paris
+                            </h2>
+                            <p class="item-subtitle">
+                                <i class="fa-solid fa-film"></i>
+                                Filme(1957)
+                            </p>
+                            <p class="item-description">
+                                Paris, a cidade do amor. A beleza de Audrey é exaltada e podemos ver sua essencia doce e vivaz. 
+                            </p>
+                            
+                        </div>
+                    </li>
+                    <li id="no_results">
+                        Nenhum resultado encontrado
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <h1>Audrey Hepburn</h1>
+                    <p>It's all about your dreams.</p>
+                    <div id="footer_social_media">
+                        <a href="#" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer-link" id="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <ul class="footer-list">
+                    <li>
+                        <h3>Blog</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Movies</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Life</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Music</a>
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li>
+                        <h3>Products</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">App</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Desktop</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Cloud</a>
+                    </li>
+                </ul>
+                <div id="footer_subscribe">
+                    <h3>Subscribe</h3>
+                    <p>
+                        Enter your e-mail to get notified about
+                        our news solutions
+                    </p>
+                    <div id="input_group">
+                        <input type="email" id="email">
+                        <button>
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="footer_copyright">
+                &#169
+                2024 all rights reserved
+            </div>
+        </footer>
+    </div>
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
